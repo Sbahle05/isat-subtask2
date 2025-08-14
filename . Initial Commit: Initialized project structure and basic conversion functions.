@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <bitset>
+#include <sstream>
+#include <cstdlib> // For rand()
+#include <ctime>   // For time()
+
+using namespace std;
+
+// Function 1: Decimal to Binary
+string decimalToBinary(int decimal) {
+    return bitset<16>(decimal).to_string().substr(bitset<16>(decimal).to_string().find('1'));
+}
+
+// Function 2: Binary to Decimal
+int binaryToDecimal(string binary) {
+    return stoi(binary, nullptr, 2);
+}
+
+// Function 3: Decimal to Hexadecimal
+string decimalToHex(int decimal) {
+    stringstream ss;
+    ss << hex << uppercase << decimal;
+    return ss.str();
+}
+
+// Function 4: Hexadecimal to Decimal
+int hexToDecimal(string hexStr) {
+    return stoi(hexStr, nullptr, 16);
+}
