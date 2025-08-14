@@ -1,0 +1,15 @@
+int main() {
+    int choice;
+    srand(time(0)); // Initialize random seed
+
+    do {
+        // Display Menu
+        cout << "\nConversion Menu:\n";
+        cout << "1. Convert Decimal to Binary\n";
+        cout << "2. Convert Binary to Decimal\n";
+        cout << "3. Convert Hexadecimal to Decimal\n";
+        cout << "4. Convert Decimal to Hexadecimal\n";
+        cout << "5. Demo (Generate and convert random integers to binary)\n";
+        cout << "6. Exit\n";
+        cout << "Enter your choice (1-6): ";
+        cin >> choice;
