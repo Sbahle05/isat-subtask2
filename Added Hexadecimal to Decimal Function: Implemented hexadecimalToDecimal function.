@@ -1,0 +1,35 @@
+
+                cout << "Enter a binary number: ";
+                cin >> binary;
+                cout << "Decimal representation: " << binaryToDecimal(binary) << endl;
+                break;
+            }
+            case 3: {
+                string hex;
+                cout << "Enter a hexadecimal number: ";
+                cin >> hex;
+                cout << "Decimal representation: " << hexToDecimal(hex) << endl;
+                break;
+            }
+            case 4: {
+                int decimal;
+                cout << "Enter a decimal number: ";
+                cin >> decimal;
+                cout << "Hexadecimal representation: " << decimalToHex(decimal) << endl;
+                break;
+            }
+            case 5: {
+                int randomNum = rand() % 100; // Random number between 0 and 99
+                cout << "Generated random integer: " << randomNum << endl;
+                cout << "Binary representation: " << decimalToBinary(randomNum) << endl;
+                break;
+            }
+            case 6: {
+                cout << "Exiting the program." << endl;
+                break;
+            }
+            default: {
+                cout << "Invalid choice. Please select from 1 to 6." << endl;
+                break;
+            }
+        }
